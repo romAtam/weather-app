@@ -11,7 +11,7 @@ const forecast=document.querySelector('.forecast')
   weatherform.addEventListener('submit',(e)=>{
        e.preventDefault();
        
-   url=`http://localhost:3000/weather?address=${input.value}`;
+   url=`/weather?address=${input.value}`;
    fetch(url).then((res)=>res.json()).then((data)=>{
     if(data.error){
         console.log(data.error) 
