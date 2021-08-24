@@ -10,6 +10,7 @@ else if(response.body.error) {
 callback("unable to find location",undefined)
 }
 else{
+    console.log(response.body.current)
 callback(undefined,response.body.current)
 }
 
