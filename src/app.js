@@ -91,7 +91,7 @@ app.get("/help/*", (req, res) => {
   res.render("404", {
     title: "weather about",
     name: "roman caban",
-    massage: "page  exist",
+    massage: "pag  exist",
   });
 });
 
